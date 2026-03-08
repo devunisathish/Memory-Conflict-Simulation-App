@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Memory Conflict Simulation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Memory Conflict Simulation</h1>
+<p>If two programs write to the same memory location, what happens?</p>
+
+<div class="container">
+
+<div class="program">
+<h2>Program 1</h2>
+<input type="text" id="name1" placeholder="Enter Student Name">
+<input type="text" id="data1" placeholder="Enter Data">
+<button onclick="writeMemory(1)">Write to Memory</button>
+</div>
+
+<div class="program">
+<h2>Program 2</h2>
+<input type="text" id="name2" placeholder="Enter Student Name">
+<input type="text" id="data2" placeholder="Enter Data">
+<button onclick="writeMemory(2)">Write to Memory</button>
+</div>
+
+</div>
+
+<h2>Memory Location (Address 100)</h2>
+
+<div class="memory">
+<p id="memoryContent">Memory Empty</p>
+</div>
+
+<h2>Dashboard</h2>
+
+<div class="dashboard">
+<ul id="log"></ul>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
